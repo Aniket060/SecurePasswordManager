@@ -1,4 +1,4 @@
-import PasswordManagertest
+import PasswordManagerCore
 
 try:
     service = int(input("""Welcome to Credential Manager!
