@@ -10,7 +10,7 @@ try:
     if service == 1:
         user = input("Enter username: ")
         pwd = input("Enter password: ")
-        r1 = PasswordManagertest.UserManager(user, pwd)
+        r1 = PasswordManagerCore.UserManager(user, pwd)
         status = r1.LoginUser()
         
         if status:
@@ -41,7 +41,7 @@ try:
         pwd = input("Enter password: ")
         
         # Validate password strength before proceeding
-        s = PasswordManagertest.PasswordStrength(pwd)
+        s = PasswordManagerCore.PasswordStrength(pwd)
         
         while 0 <= s <= 2:
             val = input("Press 1 to continue. Press 0 to re-enter password: ")
@@ -50,15 +50,15 @@ try:
                 break
             elif val == '0':
                 pwd = input("Enter password: ")
-                s = PasswordManagertest.PasswordStrength(pwd)
+                s = PasswordManagerCore.PasswordStrength(pwd)
             else:
                 print("Invalid Option.")
         
-        r1 = PasswordManagertest.UserManager(user, pwd)
+        r1 = PasswordManagerCore.UserManager(user, pwd)
         r1.RegisterUser()
 
     elif service == 3:
-        PasswordManagertest.ForgotPassword()
+        PasswordManagerCore.ForgotPassword()
 
     else:
         print("Invalid Choice.")
