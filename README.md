@@ -13,5 +13,7 @@ How to run:-
 
 1. Download the Google Authenticator App.
 2. Run PasswordManagerMain.py
-3. After registering a new account, open the saved QR Code in your machine and scan using Google Authenticator for Two-Factor Authentication.
+3. After registering a new account, open the saved QR Code in your machine and scan using Google Authenticator to register Two-Factor Authentication.
+4. Login using the credentials.
+5. 
 
