@@ -1,7 +1,7 @@
 # PasswordManager
 Store Passwords securely using a combination of hashing and encryption.
 
-Uses bcrypt and PBKDF2HMAC.
+Pure Python based development by using bcrypt and PBKDF2HMAC libraries.
 
 2FA using Google Authenticator.
 
