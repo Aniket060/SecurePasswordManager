@@ -1,13 +1,13 @@
 # PasswordManager
-Store Passwords securely using a combination of hashing and encryption.
+In today’s digital landscape, where the security of personal and professional data is increasingly at risk, managing credentials securely is a critical necessity. The Credential Management System is designed to empower individuals with a secure, user-friendly solution for storing and managing sensitive information like usernames, passwords, and authentication tokens. 
 
-Pure Python based development by using bcrypt and PBKDF2HMAC libraries.
+Users often struggle to maintain strong, unique passwords across various platforms, which exposes them to significant security risks. The lack of multi-factor authentication (MFA) and poor password management practices exacerbate these vulnerabilities. There is a pressing need for a system that not only stores passwords securely but also encourages best practices in password creation and management.
 
-2FA using Google Authenticator.
+The Credential Management System leverages a combination of hashing and encryption to store passwords securely. Using pure Python development, the system utilizes the bcrypt library for secure password hashing and PBKDF2HMAC for additional key derivation and encryption. Passwords are encrypted and stored locally on the user’s machine, ensuring that sensitive data is protected even in offline scenarios.
 
-Data is stored locally on the machine.
+The system also integrates Two-Factor Authentication (2FA) using Google Authenticator, adding an extra layer of security to the authentication process. Before storing passwords, the system calculates their entropy to assess strength and checks against a database of commonly used passwords to ensure that weak passwords are not stored. This approach not only secures credentials but also educates users on the importance of strong, unique passwords.
 
-Calculates the entropy of password as well as checks if it is a commonly used password, in order to determine the overall strength of the password before storing it.
+
 
 How to run:-
 
